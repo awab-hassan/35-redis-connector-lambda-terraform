@@ -2,6 +2,10 @@
 
 Terraform module that provisions a Node.js Lambda Redis connector in `ca-central-1`. The Lambda runs inside an existing VPC with access to an ElastiCache Redis cluster and is exposed through both an API Gateway REST endpoint and a direct Lambda Function URL.
 
+## Architecture
+
+![Architecture Diagram](./architecture.png)
+
 ## What It Provisions
 
 - **Lambda function** (`redis-connector`) — Node.js 18.x, VPC-attached for private Redis access
